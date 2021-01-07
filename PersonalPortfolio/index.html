@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="logo">June Sung Park</h1>
+        <nav>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#about-me">About Me</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm June Sung Park, Chairman of Korea Software Technology Association (KOSTA).
+                My software engineering career started in 1984 at a computing center in the 
+                Ohio State University where I obtained my Ph.D. degree in Computer Science.
+                I programmed in Fortran, SAS, PL/1, Cobol, etc. using mainframe computers during 1980s.
+                I didn't do much programmig during the last 30 years.  During that period I served as
+                a professor at the University of Iowa and then as CTO in Samsung, and then as a professor
+                in Korea Advanced Institute of Science Technology (KAIST). From 2019, serving as 
+                Chairman of KOSTA after retiring from KAIST, I started programming again. I develop
+                web applications that we can use as capstone projects in KOSTA software training programs.
+                I use HTML, CSS, JavaScript, Java, mySQL, front-end and back-end libraries and frameworks
+                in developing those applications.
+            </p>
+            <img src="./JP-Photo-Budapest.jpg" alt="A photo of June Sung Park" class="photo-img" id="me-img">
+            <button id="me-button" onclick="changePhoto()">Click to change the photo</button>
+            <script>
+                function changePhoto() {
+                    var elem = document.getElementById("me-img");
+                    if (elem.src.match("JP-Photo-Florence.jpg")) {
+                        elem.src="JP-Photo-Budapest.jpg";
+                    }
+                    else {
+                        elem.src="JP-Photo-Florence.jpg";
+                    }
+                }
+            </script>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <details class="project" open>
+                <summary><h3>Arts & Crafts</h3></summary>
+                <img src="./ArtsCrafts-website.JPG" alt="Arts & Crafts Website" class="photo-img">
+            </details>
+            <details class="project" open>
+                <summary><h3>Excursion</h3></summary>
+                <img src="./Excursion-website.JPG" alt="Excursion Website" class="photo-img">
+            </details>
+            <details class="project" open>
+                <summary><h3>Tea Cozy</h3></summary>
+                <img src="./TeaCozy-website.JPG" alt="Tea Cozy Website" class="photo-img">
+            </details>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skills-container">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-git"></i>
+                <i class="fab fa-chrome"></i>
+                <i class="fas fa-terminal"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-java"></i>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Have an interesting project? I would love to hear about it!</p>
+            <div id="contact-container">
+              <a href="https://www.linkedin.com/in/june-sung-park-a66683/"><i class="fab fa-linkedin icon"></i></a>
+              <a href="https://github.com/junesungpark/junesungpark.github.io"><i class="fab fa-github icon"></i></a>
+              <a href="mailto:june@JP-Institute-of-Software.com"><i class="fas fa-envelope-square icon"></i></a>
+              <a href="https://www.facebook.com/june.sung.park.sangju/"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </section>
+    </main>
+</body>
+</html>

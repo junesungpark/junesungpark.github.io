@@ -1,0 +1,88 @@
+html, body {
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.8;
+  justify-content: center;
+}
+header {
+  display: flex;
+  position: fixed;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  width: 100%;
+  justify-content: space-between;
+}
+header img {
+  padding-left: 10px;
+  height: 50px;
+}
+header nav ul li {
+    display: inline-block;
+    text-decoration: underline;
+    padding: 16px;
+}
+main banner {
+    position: relative;
+    top: 70px;
+    display: flex;
+    background-image: url('./img-mission-background.jpg');
+    height: 700px;
+    width: 1200px;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+}
+.center {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+#month {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#month img {
+    height: 200px;
+    width: 300px;
+}
+.img-text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 300px;
+    margin: 10 px;
+}
+#locations {
+    display: flex;
+    background-image: url(./img-locations-background.jpg);
+    height: 500px;
+    width: 1200px;
+    flex-flow: row-reverse wrap;
+    align-content: center;
+    align-items: center;
+}
+.text-box {
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 15px 20px;
+    opacity: 1;
+}
+#contact {
+    height: 200px;
+}
+footer {
+    position: fixed;
+    margin-left: 20px;
+    left: 0;
+    bottom: 0;
+}
